@@ -53,7 +53,9 @@ public class Auction  {
 	public void calculateAuctionFee() {
 		auctionFee = biddingDuration / finalPrice;
 	}
-	//Split into two methods
+	/* Split into two methods
+	 * add ifNoBid() method
+	 */
 	public void storeBids(double bid) throws Exception {
 		if (bid >= buyNowPrice) {
 			biddingDuration = 0;
